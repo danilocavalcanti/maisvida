@@ -23,7 +23,7 @@ public class MetodosController {
 	@RequestMapping("/login")
 	public boolean login(@RequestParam("login") String login,
 			@RequestParam("senha") String senha) {
-		return usuarioRepository.findByLogin(login, senha) != null;
+		return usuarioRepository.findByLoginAndSenha(login, senha) != null;
 	}
 
 	@RequestMapping("/listar")

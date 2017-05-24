@@ -6,5 +6,5 @@ import com.backendRest.pojo.Usuario;
 
 public interface UsuarioRepository extends MongoRepository<Usuario, String>{
 
-	public Usuario findByLogin(String login, String senha);
+	public Usuario findByLoginAndSenha(String login, String senha);
 }
